@@ -1,0 +1,15 @@
+<div>
+  <div>
+    {{countDown}}
+  </div>
+  <form name="SearchForm" ng-submit="searchUser(username)">
+    <!--input type="search" required placeholder="enter keyword" ng-model="username" /-->
+    <select ng-model="username">
+      <option value="angular">Angular</option>
+      <option value="robconery">Rob</option>
+      <option value="odetocode">Scott</option>
+    </select>
+    <input type="submit" value="search" />
+  </form>
+  <div ng-include="'user.html'" ng-show="user"></div>
+</div>
